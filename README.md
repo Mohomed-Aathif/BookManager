@@ -35,3 +35,5 @@ book-manager-url → Angular frontend
 1. Run the ASP.NET backend using Visual Studio.
 2. Navigate to the Angular project folder.
 3. Run the following command:
+4. ngserve
+5. Open the browser and go to: localhost:4200
