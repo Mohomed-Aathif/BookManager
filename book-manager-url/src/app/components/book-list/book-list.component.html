@@ -1,0 +1,35 @@
+<div class="container">
+
+  <div class="form-section">
+    <app-book-form [selectedBook]="selectedBook"></app-book-form>
+  </div>
+
+  <div class="table-section">
+
+    <h2>Book List</h2>
+
+    <table>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>ISBN</th>
+        <th>Publication Date</th>
+        <th>Action</th>
+      </tr>
+
+      <tr *ngFor="let book of books">
+        <td>{{book.title}}</td>
+        <td>{{book.author}}</td>
+        <td>{{book.isbn}}</td>
+        <td>{{book.publicationDate | date}}</td>
+        <td>
+          <button (click)="editBook(book)">Edit</button>
+          <button (click)="deleteBook(book.id)">Delete</button>
+        </td>
+      </tr>
+
+    </table>
+
+  </div>
+
+</div>
