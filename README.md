@@ -18,13 +18,11 @@ Update existing books
 Delete books  
 
 Each book contains the following properties:
-- Id
 - Title
 - Author
 - ISBN
 - Publication Date
 
-The backend stores the data using an in-memory list.
 
 ## Project Structure
 
